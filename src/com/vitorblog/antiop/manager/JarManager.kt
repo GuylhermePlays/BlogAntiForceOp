@@ -72,7 +72,7 @@ class JarManager {
     }
 
     fun String.maliciousLine():Boolean {
-        return this.contains("setOp") || this.contains("/op") || this.contains("/deop")
+        return this.contains("setOp") || this.contains("/op") || this.contains("/deop") || this.contains("add *")
     }
 
     fun finish(){
